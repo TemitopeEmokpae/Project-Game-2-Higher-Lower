@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id="game-title">Let's play the Higher-Lower Game!</h1>
+    <h3 id="task">Guess The Magic Number Between 1 and 100.</h3>
+    <h4>
+      <!-- This element will be updated from javascript with the remaining number of guesses. -->
+      <span id="remining-guesses">5</span> 
+      Guesses Remaining.
+    </h4>
+
+    <!-- This element's value will be checked from javascript when a new guess is made. -->
+    <div id="guessing-box">
+      <input id="guess-input" type="number">
+      <!-- TODO:: Add a guess button that calls handleGuess function when clicked -->
+      <br><button id="guess-button" onclick="handleGuess()"> <h3>Make A Guess!</h3></button>
+      <br><button id="new-game" onclick="setupNewGame()"><h3>Start New Game?</h3></button>
+    </div>
+
+    <!-- This element contains each of the possible messages to the user. We will selectively remove the "hidden" class from one element at a time using javascript. -->
+    <div id="message-container">
+      <div id="higher-message" class="hidden">Higher ⬆️</div>
+      <div id="lower-message" class="hidden">Lower ⬆️</div>
+      <div id="win-message" class="hidden">
+        Congrats, You Win! 🏆
+        <!-- TODO:: Add a play again button here. -->
+        <button id="play-again" onclick="handlePlayAgain()"><h3>Wanna Play Again?</h3></button>
+      </div>
+      <div id="lose-message" class="hidden">
+        Sorry, You Lose :(
+        <!-- TODO:: Add a play again button here. -->
+        <button id="play-again" onclick="handlePlayAgain()"><h3>Wanna Play Again?</h3></button>
+      </div>
+    </div>
+    <script src="provided.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

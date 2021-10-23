@@ -1,0 +1,84 @@
+body {
+  background-color: #B4AEE8;
+  background-image: url("https://64.media.tumblr.com/c28a72c52d4eaa8c51249c9ff5a44f31/tumblr_p3qjabk8Xc1qzm8dwo1_400.gifv");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-title {
+  color: #93329E;
+  text-shadow: #93329E 0 0 15px;
+  text-align: center;
+}
+
+#task {
+  color: #440A67;
+  text-shadow: #440A67 0 0 15px;
+  text-align: center;
+}
+
+#guessing-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#guess-input {
+  font-size: 20px;
+  height: 7vh;
+  width: 8vw;
+  text-align: center;
+}
+
+#remining-guesses, h4 {
+  color: #FFE3FE;
+  text-shadow: #FFE3FE 0 0 15px;
+  text-align: center;
+}
+
+#guess-button {
+  background-color: #93329E;
+  color: #FFE3FE;
+  text-align: center;
+}
+
+#message-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #440A67;
+  font-size: 25px;
+}
+
+#new-game {
+  background-color: #93329E;
+  color: #FFE3FE;
+  text-align: center;
+}
+
+#lose-message {
+  text-align: center;
+}
+
+#win-message {
+  text-align: center;
+}
+
+#play-again {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #93329E;
+  color: #FFE3FE;
+  text-shadow: #FFE3FE 0 0 15px;
+  font-size: 25px;
+}
